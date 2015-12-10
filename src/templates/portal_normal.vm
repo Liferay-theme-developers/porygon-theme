@@ -45,11 +45,36 @@ $theme.include($body_top_include)
 			#parse ("$full_templates_path/navigation.vm")
 		#end
 	</header>
+
+	<section id="content">
+		<h1 class="hide-accessible">$the_title</h1>
+
+		<nav id="breadcrumbs">
+			#breadcrumbs()
+		</nav>
+
 <!-- * *************************************************** -->
 
 
 
-
+	<div class="col-no-padding jumbotron news-jumbotron">
+		<div class="col-md-6">
+			<div class="center-right" style="background-image: url($images_folder/content/background-01.jpg)">
+				<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
+					<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="top-right" style="background-image: url($images_folder/content/background-02.jpg)">
+				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+					<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
+			</div>
+			<div class="bottom-right" style="background-image: url($images_folder/content/background-03.jpg)">
+				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+					<p class="text-uppercase">By <a href="#">Russell Brando</a></p>
+			</div>
+		</div>
+	</div>
 
 
 	<section class="container-fluid-1280">
@@ -75,43 +100,74 @@ $theme.include($body_top_include)
 				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 			<div class="col-md-6">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
-				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				<div class="well">
+					<span class="user-icon user-icon-xl"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+					<h2 class="text-center text-uppercase">Trending discussions</h2>
+
+					<p>May 27, 2015</p>
+					<h3>Millennials to Snake People is a Cloud to Butt whose time has come</h3>
+					<p class="text-uppercase">By James Vincent</p>
+
+					<p>May 27, 2015</p>
+					<h3>Confused by the FIFA corruption news? John Oliver explained it last</h3>
+					<p class="text-uppercase">By Marcos Castro</p>
+
+					<p>May 27, 2015</p>
+					<h3>Confused by the FIFA corruption news? John Oliver explained it last</h3>
+					<p class="text-uppercase">By Iván Morote</p>
+				</div>
 			</div>
-
-
-
 		</div>
 		<div class="col-md-4">
-			<div class="well center-block">
+			<div class="well">
 				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x200.jpg" /></a>
 			</div>
+
+			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+			<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+			<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+			<p>The Mailbox team can’t say it wasn’t warned. Back when co-founder Gentry Underwood was raising money to build the app that would become Mailbox, investors tried to urge him away.</p>
+
 		</div>
 
 	</section>
 
-	<!--<div class="jumbotron news-jumbotron">
-		<div class="col-md-6">
-			<p>Placeholder text</p>
+	<section class="container-fluid-1280">
+		<div class="col-md-3">
+			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+			<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+			<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+			<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
 		</div>
-		<div class="col-md-6">
-			<p>Placeholder text</p>
+		<div class="col-md-3">
+
+			<div class="figure">
+
+				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/282x148_01.jpg">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-center">
+							<a href="#">World Cup sponsor logos redesigned to protest.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/282x148_02.jpg">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-center">
+							<a href="#">Carajillo strong, grounds redeye half and half so percolator.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
-	</div>-->
 
-
-
-
+	</section>
 
 <!-- * *************************************************** -->
-	<section id="content">
-		<h1 class="hide-accessible">$the_title</h1>
-
-		<nav id="breadcrumbs">
-			#breadcrumbs()
-		</nav>
 
 		#if ($selectable)
 			$theme.include($content_include)

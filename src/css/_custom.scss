@@ -1,6 +1,8 @@
 @import "partials/_layout";
+@import "partials/_navbar";
+@import "partials/_footer";
 
-h2 a {
+.col-md-6 h2 a {
 	&, &:hover, &:focus {
 		color: $brand-dark-color;
 	}
@@ -9,27 +11,43 @@ h2 a {
 // SMALL TEXT ARTICLES
 
 .text-info.text-uppercase {
+	color: $brand-dark-text-color;
 	font-size: 14px;
+
 	a {
 		color: $brand-link-color;
 	}
 }
 
-//  JUMBOTRON
+//  WELLS
 
 .well {
 	background-color: $brand-light-background-color;
 	border-radius: 0;
 	border-width: 0;
 	box-shadow: none;
+	position: relative;
+
+	.user-icon.user-icon-xl {
+		background-color: $brand-link-color;
+		color: $brand-light-text-color;
+		left: 50%;
+		position: absolute;
+		top: 0;
+ 		transform: translate(-50%, -50%);
+	}
 }
 
 //  JUMBOTRON
 
-.news-jumbotron {
+.jumbotron.news-jumbotron {
 	background-color: $brand-dark-background-color;
 	border-radius: 0;
-	color: $brand-light-text-color;
 	overflow: hidden;
 	padding: 0;
+
+	&, a {
+		color: $brand-light-text-color;
+	}
+
 }
