@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+	$theme.include($top_head_include)
+</head>
+
+<body class="$css_class">
+
+#quick_access("#main-content")
+
+$theme.include($body_top_include)
+
+#product_menu_sidebar($liferay_product_menu_state)
+
+#control_menu()
+<div class="container-fluid" id="wrapper">
+	<header id="banner" role="banner">
+		<div id="heading">
+			<h1 class="site-title">
+				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+				</a>
+
+				#if ($show_site_name)
+					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+						$site_name
+					</span>
+				#end
+			</h1>
+		</div>
+
+		#if (!$is_signed_in)
+			<a data-redirect="$is_login_redirect_required" href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+		#end
+
+		#if ($has_navigation && $is_setup_complete)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+<!-- * *************************************************** -->
+
+
+
+
+
+
+	<section class="container-fluid-1280">
+
+		<div class="col-md-8">
+			<div class="col-md-6">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+			</div>
+			<div class="col-md-6">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+			</div>
+			<div class="clearfix visible-lg-block visible-md-block"></div>
+			<div class="col-md-6">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+			</div>
+			<div class="col-md-6">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+			</div>
+
+
+
+		</div>
+		<div class="col-md-4">
+			<div class="well center-block">
+				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x200.jpg" /></a>
+			</div>
+		</div>
+
+	</section>
+
+	<!--<div class="jumbotron news-jumbotron">
+		<div class="col-md-6">
+			<p>Placeholder text</p>
+		</div>
+		<div class="col-md-6">
+			<p>Placeholder text</p>
+		</div>
+	</div>-->
+
+
+
+
+
+<!-- * *************************************************** -->
+	<section id="content">
+		<h1 class="hide-accessible">$the_title</h1>
+
+		<nav id="breadcrumbs">
+			#breadcrumbs()
+		</nav>
+
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</section>
+
+	<footer id="footer" role="contentinfo">
+		<p class="powered-by">
+			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		</p>
+	</footer>
+</div>
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+
+</body>
+
+</html>

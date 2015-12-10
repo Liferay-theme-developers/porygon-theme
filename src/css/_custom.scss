@@ -1,1 +1,35 @@
 @import "partials/_layout";
+
+h2 a {
+	&, &:hover, &:focus {
+		color: $brand-dark-color;
+	}
+}
+
+// SMALL TEXT ARTICLES
+
+.text-info.text-uppercase {
+	font-size: 14px;
+	a {
+		color: $brand-link-color;
+	}
+}
+
+//  JUMBOTRON
+
+.well {
+	background-color: $brand-light-background-color;
+	border-radius: 0;
+	border-width: 0;
+	box-shadow: none;
+}
+
+//  JUMBOTRON
+
+.news-jumbotron {
+	background-color: $brand-dark-background-color;
+	border-radius: 0;
+	color: $brand-light-text-color;
+	overflow: hidden;
+	padding: 0;
+}
