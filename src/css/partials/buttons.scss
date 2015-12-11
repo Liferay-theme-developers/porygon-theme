@@ -1,0 +1,32 @@
+[class*="btn-theme"] {
+	border-radius: 0;
+	border-width: 0;
+	text-transform: uppercase;
+
+	&:hover, &:focus {
+		border-width: 0;
+	}
+}
+
+.btn-theme-default {
+	background-color: $brand-link-color;
+	color: $brand-light-text-color;
+	font-size: 12px;
+
+	&:hover, &:focus {
+		background-color: $brand-light-text-color;
+		color: $brand-link-color;
+	}
+}
+
+.btn-theme-primary {
+	background-color: $brand-light-background-color;
+	color: $brand-link-color;
+
+	&:hover, &:focus {
+		background-color: $brand-link-color;
+		color: $brand-light-background-color;
+	}
+}
+
+

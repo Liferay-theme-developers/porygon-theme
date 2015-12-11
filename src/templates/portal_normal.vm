@@ -83,20 +83,20 @@ $theme.include($body_top_include)
 			<div class="col-md-6">
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
 				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 			<div class="col-md-6">
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
 				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
 			</div>
 			<div class="clearfix visible-lg-block visible-md-block"></div>
 			<div class="col-md-6">
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
 				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 			<div class="col-md-6">
@@ -120,7 +120,7 @@ $theme.include($body_top_include)
 		</div>
 		<div class="col-md-4">
 			<div class="well">
-				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/360x200.jpg" /></a>
+				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" /></a>
 			</div>
 
 			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
@@ -140,14 +140,12 @@ $theme.include($body_top_include)
 			<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
 		</div>
 		<div class="col-md-3">
-
 			<div class="figure">
-
 				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/282x148_01.jpg">
 				<div class="figcaption-full">
 					<div class="flex-container">
-						<div class="flex-item-center">
-							<a href="#">World Cup sponsor logos redesigned to protest.</a>
+						<div class="flex-item-bottom">
+							<h2><a href="#">World Cup sponsor logos redesigned to protest.</a></h2>
 						</div>
 					</div>
 				</div>
@@ -156,17 +154,41 @@ $theme.include($body_top_include)
 				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/282x148_02.jpg">
 				<div class="figcaption-full">
 					<div class="flex-container">
-						<div class="flex-item-center">
-							<a href="#">Carajillo strong, grounds redeye half and half so percolator.</a>
+						<div class="flex-item-bottom">
+							<h2><a href="#">Carajillo strong, grounds redeye half and half so percolator.</a></h2>
 						</div>
 					</div>
 				</div>
 			</div>
-
+		</div>
+		<div class="col-md-6">
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/595x312.jpg">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">The debate on lethal robots is starting too late</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/595x312.jpg">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</section>
 
+	<div class="container-fluid-1280">
+		<a class="btn btn-block btn-lg btn-primary btn-theme-primary">See all news</a>
+	</div>
 <!-- * *************************************************** -->
 
 		#if ($selectable)
@@ -180,11 +202,8 @@ $theme.include($body_top_include)
 		#end
 	</section>
 
-	<footer id="footer" role="contentinfo">
-		<p class="powered-by">
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</p>
-	</footer>
+	#parse ("$full_templates_path/footer.vm")
+
 </div>
 
 $theme.include($body_bottom_include)

@@ -1,0 +1,13 @@
+#footer {
+	background-color: $brand-dark-background-color;
+	color: $brand-light-text-color;
+
+	a {
+		color: rgba($brand-light-text-color, 0.4);
+	}
+}
+
+#footer-logo {
+	opacity: 0.3
+}
+

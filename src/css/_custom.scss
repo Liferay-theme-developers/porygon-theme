@@ -1,12 +1,22 @@
-@import "partials/_layout";
-@import "partials/_navbar";
-@import "partials/_footer";
+@import "partials/layout";
+@import "partials/navbar";
+@import "partials/footer";
 
-.col-md-6 h2 a {
+@import "partials/buttons";
+@import "partials/forms";
+
+
+// COMMON
+
+// Dark header links
+
+/*.col-md-6 h2 a {
 	&, &:hover, &:focus {
 		color: $brand-dark-color;
 	}
-}
+}*/
+
+
 
 // SMALL TEXT ARTICLES
 
@@ -50,4 +60,35 @@
 		color: $brand-light-text-color;
 	}
 
+	.col-md-6 {
+		display: table-cell;
+		float: none;
+
+		> div {
+			height: 100%
+		}
+
+	}
+
 }
+
+// FIGURES
+.figure {
+	margin-bottom: 0;
+
+	&, a {
+		color: $brand-light-text-color;
+	}
+
+	.figcaption-full {
+		background-color: transparent;
+		@include background-image(linear-gradient(transparent 0, #1E1E1E 100%));
+	}
+
+	.flex-container {
+		height: 100%;
+	}
+}
+
+
+
