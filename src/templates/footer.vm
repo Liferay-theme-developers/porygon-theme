@@ -1,6 +1,6 @@
 <footer	class="container-fluid-1280" id="footer" role="contentinfo">
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<div id="footer-logo">
 				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 			</div>
@@ -12,7 +12,7 @@
 				<button class="btn btn-default btn-theme-default" type="button">Subscribe</button>
 			</form>
 		</div>
-		<nav class="col-md-6 text-uppercase small">
+		<nav class="col-md-6 col-md-offset-2 small text-uppercase">
 			<div class="col-sm-4">
 				<h2 class="h5">The Sections</h2>
 				<ul class="list-unstyled">

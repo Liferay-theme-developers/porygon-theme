@@ -5,7 +5,6 @@
 @import "partials/buttons";
 @import "partials/forms";
 
-
 // COMMON
 
 // Dark header links
@@ -15,8 +14,6 @@
 		color: $brand-dark-color;
 	}
 }*/
-
-
 
 // SMALL TEXT ARTICLES
 
@@ -44,7 +41,7 @@
 		left: 50%;
 		position: absolute;
 		top: 0;
- 		transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	}
 }
 
@@ -67,12 +64,11 @@
 		> div {
 			height: 100%
 		}
-
 	}
-
 }
 
 // FIGURES
+
 .figure {
 	margin-bottom: 0;
 
@@ -90,9 +86,8 @@
 	}
 }
 
-
-
 // VIDEO CAROUSEL
+
 .vertical-carousel {
 	background-color: $brand-dark-background-color;
 
@@ -103,23 +98,26 @@
 	.carousel-caption {
 		bottom: 0;
 		left: 0;
-		padding: 10px;
+		padding: 50px;
 		right: 0;
 		text-align: left;
 		text-shadow: none;
 
-		&:before {
-			content: " ";
-			height: 40%;
-			display: block;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			outline: 1px solid red;
-
-			@include background-image(linear-gradient(white 0, yellow 50%, transparent 50%));
+		.h1 {
+			font-size: 40px;
 		}
+	}
+
+	.item:after {
+		bottom: 0;
+		content: " ";
+		display: block;
+		height: 50%;
+		left: 0;
+		position: absolute;
+		right: 0;
+
+		@include background-image(linear-gradient(transparent 0, $brand-dark-background-color 100%));
 	}
 
 	.list-group {
@@ -132,16 +130,32 @@
 		background-color: $brand-dark-background-color;
 		border-radius: 0;
 		cursor: pointer;
-	}
+		padding-top: 40px;
+		position: relative;
 
-	.list-group .active {
-		/*background-color: #eee;*/
+		> img {
+			height: 68px;
+			left: 30px;
+			position: absolute;
+			top: 40px;
+			width: 68px;
+		}
+
+		p {
+			margin-left: 100px;
+		}
+
+		&.active, &.active:hover, &.active:focus {
+			border-color: $brand-link-color;
+			/*color: $brand-link-color;*/
+		}
 	}
 
 	@media (min-width: 992px) {
 		& {
 			padding-right: 33.3333%;
 		}
+
 		& .carousel-controls {
 			display: none;
 		}
@@ -153,4 +167,3 @@
 		}
 	}
 }
-

@@ -1,6 +1,8 @@
 #footer {
 	background-color: $brand-dark-background-color;
 	color: $brand-light-text-color;
+	padding-bottom: 70px;
+	padding-top: 70px;
 
 	a {
 		color: rgba($brand-light-text-color, 0.4);
@@ -9,6 +11,7 @@
 	label {
 		color: $brand-light-text-color;
 	}
+
 	.form-control.small {
 		font-size: 85%;
 	}
@@ -18,4 +21,3 @@
 	margin-bottom: 20px;
 	opacity: 0.3;
 }
-

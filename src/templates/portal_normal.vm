@@ -55,8 +55,6 @@ $theme.include($body_top_include)
 
 <!-- * *************************************************** -->
 
-
-
 	<div class="col-no-padding jumbotron news-jumbotron">
 		<div class="col-md-6">
 			<div class="center-right" style="background-image: url($images_folder/content/background-01.jpg)">
@@ -76,7 +74,6 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
-
 	<div class="container-fluid-1280">
 		<div class="well">
 			<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/banner_970x90.png"></a>
@@ -84,22 +81,24 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
-	<!-- VIDEO CAROUSEL -->
+	<!-- VIDEO CAROUSEL
+		http://bootsnipp.com/snippets/featured/news-carousel
+	-->
 	<div class="container-fluid-1280">
-		<div id="myCarousel" class="carousel col-no-padding slide vertical-carousel" data-ride="carousel">
+		<div class="carousel col-no-padding slide vertical-carousel" data-ride="carousel" id="mainCarousel">
 
 			<div class="carousel-inner">
 
-				<div class="item active">
+				<div class="active item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">The high-tech baby gadgets of modern parenting</a></h2>
+						<h2 class="h1"><a href="#">The high-tech baby gadgets of modern parenting</a></h2>
 					</div>
 				</div>
 				<div class="item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">The terrifying fun of going 180 mph in an IndyCar</a></h2>
+						<h2 class="h1"><a href="#">The terrifying fun of going 180 mph in an IndyCar</a></h2>
 					</div>
 				</div>
 				<div class="item">
@@ -112,66 +111,71 @@ $theme.include($body_top_include)
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640">
 					<div class="carousel-caption">
 						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
-					</div>
-				</div>
-				<div class="item">
-					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
-					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">'Supergirl' pilot leaks online six months early</a></h2>
 					</div>
 				</div>
 
 			</div><!-- End Carousel Inner -->
 
-			<ul class="list-group col-sm-4">
-				<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">The high-tech baby gadgets of modern parenting</li>
-				<li data-target="#myCarousel" data-slide-to="1" class="list-group-item">The terrifying fun of going 180 mph in an IndyCar</li>
-				<li data-target="#myCarousel" data-slide-to="2" class="list-group-item">21 inspiring TED Fellows changing the world in 2015</li>
-				<li data-target="#myCarousel" data-slide-to="3" class="list-group-item">21 inspiring TED Fellows changing the world in 2015</li>
-				<li data-target="#myCarousel" data-slide-to="4" class="list-group-item">'Supergirl' pilot leaks online six months early</li>
+			<ul class="col-sm-4 list-group">
+				<li class="active list-group-item" data-slide-to="0" data-target="#mainCarousel">
+					<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/68/68">
+					<p>The high-tech baby gadgets of modern parenting</p>
+				</li>
+				<li class="list-group-item" data-slide-to="1" data-target="#mainCarousel">
+					<img alt="[Insert alternative description here]" src="http://lorempixel.com/68/68">
+					<p>A Canadian inventor has set a new Guinness World</p>
+				</li>
+				<li class="list-group-item" data-slide-to="2" data-target="#mainCarousel">
+					<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/68/68">
+					<p>21 inspiring TED Fellows changing the world in 2015</p>
+				</li>
+				<li class="list-group-item" data-slide-to="3" data-target="#mainCarousel">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/68/68">
+					<p>21 inspiring TED Fellows changing the world in 2015</p>
+				</li>
 			</ul>
 
 			<!-- Controls -->
 			<div class="carousel-controls">
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<a class="carousel-control left" data-slide="prev" href="#mainCarousel">
 					<span class="glyphicon glyphicon-chevron-left"></span>
 				</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<a class="carousel-control right" data-slide="next" href="#mainCarousel">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
 			</div>
 
 		</div><!-- End Carousel -->
 
-		<script type="text/javascript" charset="utf-8" async defer>
+		<script type="text/javascript" charset="utf-8">
 			$(document).ready(function(){
 
 				var clickEvent = false;
-				$('#myCarousel').carousel({
+				$('#mainCarousel').carousel({
 					interval:   4000
 				}).on('click', '.list-group li', function() {
 						clickEvent = true;
 						$('.list-group li').removeClass('active');
 						$(this).addClass('active');
 				}).on('slid.bs.carousel', function(e) {
-					if(!clickEvent) {
+					if (!clickEvent) {
 						var count = $('.list-group').children().length -1;
 						var current = $('.list-group li.active');
 						current.removeClass('active').next().addClass('active');
 						var id = parseInt(current.data('slide-to'));
-						if(count == id) {
+						if (count == id) {
 							$('.list-group li').first().addClass('active');
 						}
 					}
 					clickEvent = false;
 				});
-			})
+			});
 
 			$(window).load(function() {
-			    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
-			    var itemlength = $('#myCarousel .item').length;
-			    var triggerheight = Math.round(boxheight/itemlength+1);
-				$('#myCarousel .list-group-item').outerHeight(triggerheight);
+				var boxheight = $('#mainCarousel .carousel-inner').innerHeight();
+				var itemlength = $('#mainCarousel .item').length;
+				var triggerheight = Math.round(boxheight/itemlength+1);
+				$('#mainCarousel .list-group-item').outerHeight(triggerheight);
 			});
 		</script>
 
@@ -184,20 +188,20 @@ $theme.include($body_top_include)
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
 				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 			<div class="col-md-6">
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
 				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
 			</div>
 			<div class="clearfix visible-lg-block visible-md-block"></div>
 			<div class="col-md-6">
 				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
 				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
 				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 			<div class="col-md-6">
 				<div class="well">
