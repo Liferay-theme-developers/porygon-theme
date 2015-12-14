@@ -1,6 +1,18 @@
 <footer	class="container-fluid-1280" id="footer" role="contentinfo">
 	<div class="row">
-		<nav class="col-md-6 col-md-push-6 text-uppercase small">
+		<div class="col-md-6">
+			<div id="footer-logo">
+				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
+			</div>
+			<form>
+				<div class="form-group">
+					<label class="small text-uppercase" for="newsletter-address">Sign up for the Daily Newsletter</label>
+					<input class="form-control small" id="newsletter-address" placeholder="Enter your Email Address" type="email">
+				</div>
+				<button class="btn btn-default btn-theme-default" type="button">Subscribe</button>
+			</form>
+		</div>
+		<nav class="col-md-6 text-uppercase small">
 			<div class="col-sm-4">
 				<h2 class="h5">The Sections</h2>
 				<ul class="list-unstyled">
@@ -40,20 +52,19 @@
 				</ul>
 			</div>
 		</nav>
-		<div class="col-md-6 col-md-pull-6">
-			<div id="footer-logo">
-				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-			</div>
-			<form>
-				<fieldset>
-					<legend>Sign up for the Daily Newsletter</legend>
-					<input class="form-control" placeholder="Enter your Email Address" type="email">
-					<button class="btn btn-default btn-theme-default" type="button">Subscribe</button>
-				</fieldset>
-			</form>
+
+		<div class="col-md-4 small">
+			<ul class="list-inline">
+				<li><a href="#">Ethics Statement</a></li>
+				<li><a href="#">Community Guidelines</a></li>
+			</ul>
+			<ul class="list-inline">
+				<li><a href="#">Terms of Use</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+			<p>All Systems Operational</p>
+			<p><a href="#">Check out our status page for more details.</a></p>
 		</div>
-
-
 
 	</div>
 	<p class="powered-by text-right">

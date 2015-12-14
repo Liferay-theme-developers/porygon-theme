@@ -92,3 +92,65 @@
 
 
 
+// VIDEO CAROUSEL
+.vertical-carousel {
+	background-color: $brand-dark-background-color;
+
+	&, & a {
+		color: $brand-light-text-color;
+	}
+
+	.carousel-caption {
+		bottom: 0;
+		left: 0;
+		padding: 10px;
+		right: 0;
+		text-align: left;
+		text-shadow: none;
+
+		&:before {
+			content: " ";
+			height: 40%;
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			outline: 1px solid red;
+
+			@include background-image(linear-gradient(white 0, yellow 50%, transparent 50%));
+		}
+	}
+
+	.list-group {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.list-group-item {
+		background-color: $brand-dark-background-color;
+		border-radius: 0;
+		cursor: pointer;
+	}
+
+	.list-group .active {
+		/*background-color: #eee;*/
+	}
+
+	@media (min-width: 992px) {
+		& {
+			padding-right: 33.3333%;
+		}
+		& .carousel-controls {
+			display: none;
+		}
+	}
+
+	@media (max-width: 991px) {
+		& .list-group {
+			display: none;
+		}
+	}
+}
+

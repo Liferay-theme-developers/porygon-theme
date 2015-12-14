@@ -77,6 +77,106 @@ $theme.include($body_top_include)
 	</div>
 
 
+	<div class="container-fluid-1280">
+		<div class="well">
+			<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/banner_970x90.png"></a>
+			<p class="small">Advertisement</p>
+		</div>
+	</div>
+
+	<!-- VIDEO CAROUSEL -->
+	<div class="container-fluid-1280">
+		<div id="myCarousel" class="carousel col-no-padding slide vertical-carousel" data-ride="carousel">
+
+			<div class="carousel-inner">
+
+				<div class="item active">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
+					<div class="carousel-caption">
+						<h2 class="h1"><a href="#">The high-tech baby gadgets of modern parenting</a></h2>
+					</div>
+				</div>
+				<div class="item">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640">
+					<div class="carousel-caption">
+						<h2 class="h1"><a href="#">The terrifying fun of going 180 mph in an IndyCar</a></h2>
+					</div>
+				</div>
+				<div class="item">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
+					<div class="carousel-caption">
+						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
+					</div>
+				</div>
+				<div class="item">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640">
+					<div class="carousel-caption">
+						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
+					</div>
+				</div>
+				<div class="item">
+					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
+					<div class="carousel-caption">
+						<h2 class="h1"><a href="#">'Supergirl' pilot leaks online six months early</a></h2>
+					</div>
+				</div>
+
+			</div><!-- End Carousel Inner -->
+
+			<ul class="list-group col-sm-4">
+				<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">The high-tech baby gadgets of modern parenting</li>
+				<li data-target="#myCarousel" data-slide-to="1" class="list-group-item">The terrifying fun of going 180 mph in an IndyCar</li>
+				<li data-target="#myCarousel" data-slide-to="2" class="list-group-item">21 inspiring TED Fellows changing the world in 2015</li>
+				<li data-target="#myCarousel" data-slide-to="3" class="list-group-item">21 inspiring TED Fellows changing the world in 2015</li>
+				<li data-target="#myCarousel" data-slide-to="4" class="list-group-item">'Supergirl' pilot leaks online six months early</li>
+			</ul>
+
+			<!-- Controls -->
+			<div class="carousel-controls">
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+
+		</div><!-- End Carousel -->
+
+		<script type="text/javascript" charset="utf-8" async defer>
+			$(document).ready(function(){
+
+				var clickEvent = false;
+				$('#myCarousel').carousel({
+					interval:   4000
+				}).on('click', '.list-group li', function() {
+						clickEvent = true;
+						$('.list-group li').removeClass('active');
+						$(this).addClass('active');
+				}).on('slid.bs.carousel', function(e) {
+					if(!clickEvent) {
+						var count = $('.list-group').children().length -1;
+						var current = $('.list-group li.active');
+						current.removeClass('active').next().addClass('active');
+						var id = parseInt(current.data('slide-to'));
+						if(count == id) {
+							$('.list-group li').first().addClass('active');
+						}
+					}
+					clickEvent = false;
+				});
+			})
+
+			$(window).load(function() {
+			    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+			    var itemlength = $('#myCarousel .item').length;
+			    var triggerheight = Math.round(boxheight/itemlength+1);
+				$('#myCarousel .list-group-item').outerHeight(triggerheight);
+			});
+		</script>
+
+	</div>
+
 	<section class="container-fluid-1280">
 
 		<div class="col-md-8">
@@ -121,6 +221,7 @@ $theme.include($body_top_include)
 		<div class="col-md-4">
 			<div class="well">
 				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" /></a>
+				<p class="small">Advertisement</p>
 			</div>
 
 			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
@@ -168,6 +269,7 @@ $theme.include($body_top_include)
 					<div class="flex-container">
 						<div class="flex-item-bottom">
 							<h2><a href="#">The debate on lethal robots is starting too late</a></h2>
+							<p class="text-uppercase">By <a href="">Frank Maruhender</a></p>
 						</div>
 					</div>
 				</div>
@@ -178,6 +280,7 @@ $theme.include($body_top_include)
 					<div class="flex-container">
 						<div class="flex-item-bottom">
 							<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+							<p class="text-uppercase">By <a href="">Brad Sayers</a></p>
 						</div>
 					</div>
 				</div>
