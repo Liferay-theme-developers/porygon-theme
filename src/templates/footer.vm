@@ -1,75 +1,77 @@
-<footer	class="container-fluid-1280" id="footer" role="contentinfo">
-	<div class="row">
-		<div class="col-md-4">
-			<div id="footer-logo">
-				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-			</div>
-			<form>
-				<div class="form-group">
-					<label class="small text-uppercase" for="newsletter-address">Sign up for the Daily Newsletter</label>
-					<input class="form-control small" id="newsletter-address" placeholder="Enter your Email Address" type="email">
+<div class="brand-background-color">
+	<footer	class="container-fluid-1280" id="footer" role="contentinfo">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="footer-logo">
+					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 				</div>
-				<button class="btn btn-default btn-theme-default" type="button">Subscribe</button>
-			</form>
+				<form>
+					<div class="form-group">
+						<label class="small text-uppercase" for="newsletter-address">Sign up for the Daily Newsletter</label>
+						<input class="form-control small" id="newsletter-address" placeholder="Enter your Email Address" type="email">
+					</div>
+					<button class="btn btn-default btn-theme-default" type="button">Subscribe</button>
+				</form>
+			</div>
+			<nav class="col-md-6 col-md-offset-2 small text-uppercase">
+				<div class="col-sm-4">
+					<h2 class="h5">The Sections</h2>
+					<ul class="list-unstyled">
+						<li><a href="#">Longform</a></li>
+						<li><a href="#">Video</a></li>
+						<li><a href="#">Reviews</a></li>
+						<li><a href="#">Tech</a></li>
+						<li><a href="#">Science</a></li>
+						<li><a href="#">Culture</a></li>
+						<li><a href="#">Cars</a></li>
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">US & World</a></li>
+
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2 class="h5">The Basics</h2>
+					<ul class="list-unstyled">
+						<li><a href="#">Site Status</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Tip Us</a></li>
+						<li><a href="#">Forums</a></li>
+						<li><a href="#">Jobs</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2 class="h5">The Elsewhere</h2>
+					<ul class="list-unstyled">
+						<li><a href="#">Site Status</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Tip Us</a></li>
+						<li><a href="#">Forums</a></li>
+						<li><a href="#">Jobs</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="col-md-4 small" id="footer-info-links">
+				<ul class="list-inline">
+					<li><a href="#">Ethics Statement</a></li>
+					<li><a href="#">Community Guidelines</a></li>
+				</ul>
+				<ul class="list-inline">
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+				<p>All Systems Operational</p>
+				<p><a href="#">Check out our status page for more details.</a></p>
+			</div>
+
 		</div>
-		<nav class="col-md-6 col-md-offset-2 small text-uppercase">
-			<div class="col-sm-4">
-				<h2 class="h5">The Sections</h2>
-				<ul class="list-unstyled">
-					<li><a href="#">Longform</a></li>
-					<li><a href="#">Video</a></li>
-					<li><a href="#">Reviews</a></li>
-					<li><a href="#">Tech</a></li>
-					<li><a href="#">Science</a></li>
-					<li><a href="#">Culture</a></li>
-					<li><a href="#">Cars</a></li>
-					<li><a href="#">Design</a></li>
-					<li><a href="#">Business</a></li>
-					<li><a href="#">US & World</a></li>
-
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h2 class="h5">The Basics</h2>
-				<ul class="list-unstyled">
-					<li><a href="#">Site Status</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Tip Us</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Jobs</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-4">
-				<h2 class="h5">The Elsewhere</h2>
-				<ul class="list-unstyled">
-					<li><a href="#">Site Status</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Tip Us</a></li>
-					<li><a href="#">Forums</a></li>
-					<li><a href="#">Jobs</a></li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="col-md-4 small">
-			<ul class="list-inline">
-				<li><a href="#">Ethics Statement</a></li>
-				<li><a href="#">Community Guidelines</a></li>
-			</ul>
-			<ul class="list-inline">
-				<li><a href="#">Terms of Use</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-			</ul>
-			<p>All Systems Operational</p>
-			<p><a href="#">Check out our status page for more details.</a></p>
-		</div>
-
-	</div>
-	<p class="powered-by text-right">
-		<small>
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
-		</small>
-	</p>
-</footer>
+		<p class="powered-by text-right">
+			<small>
+				#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+			</small>
+		</p>
+	</footer>
+</div>

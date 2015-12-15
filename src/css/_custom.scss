@@ -15,6 +15,14 @@
 	}
 }*/
 
+.brand-background-color {
+	background-color: $brand-dark-background-color;
+
+	a, .h1, .h6 {
+		color: $brand-light-text-color;
+	}
+}
+
 // SMALL TEXT ARTICLES
 
 .text-info.text-uppercase {
@@ -43,6 +51,11 @@
 		top: 0;
 		transform: translate(-50%, -50%);
 	}
+
+	.glyphicon  {
+		top: 3px;
+		left: 1px;
+	}
 }
 
 //  JUMBOTRON
@@ -66,18 +79,8 @@
 		.wrap {
 			height: 100%;
 			overflow: hidden;
-		}
-
-		.wrap:before {
-			bottom: 0;
-			content: " ";
-			display: block;
-			height: 50%;
-			left: 0;
-			position: absolute;
-			right: 0;
-
 			@include background-image(linear-gradient(transparent 0, $brand-dark-background-color 100%));
+
 		}
 	}
 
@@ -97,12 +100,29 @@
 	&.three-blocks-jumbotron {
 
 		.col-md-6 {
-			display: table-cell;
+			/*display: table-cell;
 			float: none;
 
 			> div {
 				height: 100%
+			}*/
+		}
+		.center-left {
+			// TABLET
+			@include media-query(sm, $screen-sm-max) {
+				outline: 1px solid red;
+				display: table-cell;
+				float: none;
+
+				> div {
+					height: 100%
+				}
 			}
+			// only screen and (min-width: 768px) DESKTOP, TABLET
+			@include sm {
+
+			}
+
 		}
 	}
 }
@@ -189,7 +209,6 @@
 
 		&.active, &.active:hover, &.active:focus {
 			border-color: $brand-link-color;
-			/*color: $brand-link-color;*/
 		}
 	}
 
@@ -209,3 +228,67 @@
 		}
 	}
 }
+
+// PHOTO CAROUSEL
+
+#photo-carousel {
+
+	.thumbnail {
+		border-radius: 0;
+		border-width: 0;
+		margin-bottom: 15px;
+		padding: 0;
+		position: relative;
+
+		h3 {
+			bottom: 0;
+			padding: 0 30px 15px;
+			position: absolute;
+		}
+
+		&:before {
+			bottom: 0;
+			content: " ";
+			display: block;
+			height: 50%;
+			position: absolute;
+			width: 100%;
+
+			@include background-image(linear-gradient(transparent 0, $brand-dark-background-color 100%));
+		}
+	}
+
+	p.small {
+		color: rgba($brand-light-text-color, 0.4);
+	}
+
+	.carousel-control {
+		background-color: rgba($brand-light-text-color, 0.5);
+		background-image: none;
+		border-radius: 50%;
+		bottom: auto;
+		font-size: 40px;
+		font-family: 'fontawesome-alloy';
+		height: 68px;
+		line-height: 62px;
+		opacity: 1;
+		text-shadow: none;
+		width: 68px;
+		transform: translate(-50%, -50%);
+		top: 50%;
+
+		&.right {
+			transform: translate(50%, -50%);
+		}
+	}
+}
+
+// NEWS TICKER
+
+#news-ticker {
+	.text-uppercase {
+		color: $brand-light-text-color;
+	}
+
+}
+

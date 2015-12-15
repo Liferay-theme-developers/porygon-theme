@@ -236,17 +236,26 @@ $theme.include($body_top_include)
 	<div class="col-no-padding jumbotron two-blocks-jumbotron">
 		<div class="col-md-6" style="background-image: url(http://lorempixel.com/937/360)">
 			<div class="wrap">
-			<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
-			<p class="small text-uppercase">By <a href="">Frank Maruhender</a></p>
+				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+				<p class="small text-uppercase">By <a href="">David Frederick Attenborough</a></p>
 			</div>
 		</div>
 		<div class="col-md-6" style="background-image: url(http://lorempixel.com/g/937/360)">
-					<div class="wrap">
-			<h2 class="h1"><a href="#">Evan Spiegel Reveals Plan to Turn Snapchat Into a Real Business</a></h2>
-			<p class="small text-uppercase">By <a href="">Russel Brandom</a></p>
-				</div>
+			<div class="wrap">
+				<h2 class="h1"><a href="#">Evan Spiegel Reveals Plan to Turn Snapchat Into a Real Business</a></h2>
+				<p class="small text-uppercase">By <a href="">Russel Brandom</a></p>
+			</div>
 		</div>
 	</div>
+
+	<!-- News Ticker-->
+	<div class="brand-background-color" id="news-ticker">
+		<img alt="[Insert alternative description here]" class="" src="$images_folder/content/64x64.jpg" />
+		<span class="text-uppercase">Trending now</span>
+		<div class="text-uppercase" id="ticker-counter"><span class="h1">10</span> new</div>
+	</div>
+
+
 
 	<section class="container-fluid-1280">
 		<div class="col-md-3">
@@ -284,7 +293,7 @@ $theme.include($body_top_include)
 					<div class="flex-container">
 						<div class="flex-item-bottom">
 							<h2><a href="#">The debate on lethal robots is starting too late</a></h2>
-							<p class="text-uppercase">By <a href="">Frank Maruhender</a></p>
+							<p class="text-uppercase">By <a href="">David Frederick Attenborough</a></p>
 						</div>
 					</div>
 				</div>
@@ -301,9 +310,70 @@ $theme.include($body_top_include)
 				</div>
 			</div>
 		</div>
-
 	</section>
 
+		<!-- http://bootsnipp.com/snippets/featured/simple-carousel -->
+	<div class="brand-background-color">
+		<section class="container-fluid-1280">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h6 text-center text-uppercase">Photo Essays</h2>
+					<div id="photo-carousel" class="carousel slide">
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">GoPro made a crazy 16-camera rig for Google Jump</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396"/>
+									</a>
+									<p class="small">by Sean O'Kane.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">World Cup sponsor logos redesigned to protest</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/396/396"/>
+									</a>
+									<p class="small">by Michael Peach.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">BMW shows off its newest concept car: the 3.0 CSL</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/technics"/>
+									</a>
+									<p class="small">by Ben Popper.</p>
+								</div>
+							</div>
+							<div class="item">
+
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/business"></a></div>
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/transport"></a></div>
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/city"></a></div>
+
+							</div>
+							<div class="item">
+
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/abstract"></a></div>
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/food"></a></div>
+									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/technics"></a></div>
+
+							</div>
+
+						</div>
+
+							<a data-slide="prev" href="#photo-carousel" class="carousel-control left">‹</a>
+							<a data-slide="next" href="#photo-carousel" class="carousel-control right">›</a>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('#photo-carousel').carousel({
+						interval: 5000
+					})
+				});
+			</script>
+		</section>
+	</div>
 	<div class="container-fluid-1280">
 		<a class="btn btn-block btn-lg btn-primary btn-theme-primary">See all news</a>
 	</div>
