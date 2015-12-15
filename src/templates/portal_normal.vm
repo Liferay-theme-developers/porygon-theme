@@ -49,18 +49,16 @@ $theme.include($body_top_include)
 	<section id="content">
 		<h1 class="hide-accessible">$the_title</h1>
 
-		<nav id="breadcrumbs">
+		<!--<nav id="breadcrumbs">
 			#breadcrumbs()
-		</nav>
+		</nav>-->
 
 <!-- * *************************************************** -->
 
-	<div class="col-no-padding jumbotron news-jumbotron">
-		<div class="col-md-6">
-			<div class="center-right" style="background-image: url($images_folder/content/background-01.jpg)">
-				<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
-					<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
-			</div>
+	<div class="col-no-padding jumbotron three-blocks-jumbotron">
+		<div class="center-left col-md-6" style="background-image: url($images_folder/content/background-01.jpg)">
+			<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
+			<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
 		</div>
 		<div class="col-md-6">
 			<div class="top-right" style="background-image: url($images_folder/content/background-02.jpg)">
@@ -147,12 +145,12 @@ $theme.include($body_top_include)
 
 		</div><!-- End Carousel -->
 
-		<script type="text/javascript" charset="utf-8">
-			$(document).ready(function(){
+		<script type="text/javascript">
+			$(document).ready(function() {
 
 				var clickEvent = false;
 				$('#mainCarousel').carousel({
-					interval:   4000
+					interval: 4000
 				}).on('click', '.list-group li', function() {
 						clickEvent = true;
 						$('.list-group li').removeClass('active');
@@ -232,10 +230,23 @@ $theme.include($body_top_include)
 			<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
 			<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
 			<p>The Mailbox team can’t say it wasn’t warned. Back when co-founder Gentry Underwood was raising money to build the app that would become Mailbox, investors tried to urge him away.</p>
-
 		</div>
-
 	</section>
+
+	<div class="col-no-padding jumbotron two-blocks-jumbotron">
+		<div class="col-md-6" style="background-image: url(http://lorempixel.com/937/360)">
+			<div class="wrap">
+			<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+			<p class="small text-uppercase">By <a href="">Frank Maruhender</a></p>
+			</div>
+		</div>
+		<div class="col-md-6" style="background-image: url(http://lorempixel.com/g/937/360)">
+					<div class="wrap">
+			<h2 class="h1"><a href="#">Evan Spiegel Reveals Plan to Turn Snapchat Into a Real Business</a></h2>
+			<p class="small text-uppercase">By <a href="">Russel Brandom</a></p>
+				</div>
+		</div>
+	</div>
 
 	<section class="container-fluid-1280">
 		<div class="col-md-3">

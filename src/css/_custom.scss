@@ -47,22 +47,62 @@
 
 //  JUMBOTRON
 
-.jumbotron.news-jumbotron {
+.container-fluid .jumbotron {
 	background-color: $brand-dark-background-color;
 	border-radius: 0;
 	overflow: hidden;
 	padding: 0;
 
+	.h1 {
+		font-size: 40px;
+	}
+
+	[class*="col-"] {
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+		position: relative;
+
+		.wrap {
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.wrap:before {
+			bottom: 0;
+			content: " ";
+			display: block;
+			height: 50%;
+			left: 0;
+			position: absolute;
+			right: 0;
+
+			@include background-image(linear-gradient(transparent 0, $brand-dark-background-color 100%));
+		}
+	}
+
 	&, a {
 		color: $brand-light-text-color;
 	}
 
-	.col-md-6 {
-		display: table-cell;
-		float: none;
+	&.two-blocks-jumbotron {
 
-		> div {
-			height: 100%
+		.col-md-6 {
+
+			> div {
+			}
+		}
+	}
+
+	&.three-blocks-jumbotron {
+
+		.col-md-6 {
+			display: table-cell;
+			float: none;
+
+			> div {
+				height: 100%
+			}
 		}
 	}
 }
@@ -90,6 +130,8 @@
 
 .vertical-carousel {
 	background-color: $brand-dark-background-color;
+	margin-bottom: 30px;
+	overflow: hidden;
 
 	&, & a {
 		color: $brand-light-text-color;
