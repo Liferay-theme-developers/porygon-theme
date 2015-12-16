@@ -7,13 +7,18 @@
 
 // COMMON
 
-// Dark header links
+// TABLET
+/*@include media-query(sm, $screen-sm-max) { }
 
-/*.col-md-6 h2 a {
-	&, &:hover, &:focus {
-		color: $brand-dark-color;
-	}
-}*/
+//  DESKTOP, TABLET
+@include sm {}
+
+// DESKTOP
+@include media-query($breakpoint_tablet, null) { }*/
+
+body {
+	color: $brand-dark-text-color;
+}
 
 .brand-background-color {
 	background-color: $brand-dark-background-color;
@@ -23,18 +28,119 @@
 	}
 }
 
-// SMALL TEXT ARTICLES
+// BASIC TEXT MODULES
+.theme-basic-module {
+	color: $brand-dark-text-color;
+	margin-bottom: 35px;
+
+	img {
+		width: 100%;
+	}
+
+	h2 a {
+		color: $brand-dark-color;
+	}
+
+	p {
+		opacity: 0.4;
+	}
+}
+
+// Small text
 
 .text-info.text-uppercase {
 	color: $brand-dark-text-color;
 	font-size: 14px;
+	opacity: 1;
 
 	a {
 		color: $brand-link-color;
 	}
 }
 
-//  WELLS
+//  JUMBOTRON
+
+.container-fluid .jumbotron {
+	background-color: $brand-dark-background-color;
+	border-radius: 0;
+	overflow: hidden;
+	padding: 0;
+
+	.h1 {
+		font-size: 40px;
+		line-height: 1.1;
+	}
+
+	p.small {
+		font-size: 14px;
+		margin-bottom: 0;
+	}
+
+	&, a {
+		color: $brand-light-text-color;
+	}
+
+	.left, .right {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: table;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+
+	.wrap {
+		display: table-cell;
+		padding: 14px 24px;
+		vertical-align: bottom;
+
+		@include background-image(linear-gradient(transparent 50%, rgba($brand-dark-background-color, 0.8)100%));
+
+		@include media-query($breakpoint_tablet, null) {
+			padding: 40px 50px;
+		}
+	}
+
+
+	&.two-blocks-jumbotron {
+
+		.center, .top, .bottom {
+			min-height: 322px;
+		}
+
+		// DESKTOP
+		@include media-query($breakpoint_tablet, null) {
+			.center {
+				height: 360px;
+			}
+		}
+	}
+
+	&.three-blocks-jumbotron {
+
+		.center, .top, .bottom {
+			min-height: 322px;
+		}
+
+		// TABLET
+		@include media-query(sm, $screen-sm-max) {
+		}
+
+		// DESKTOP
+		@include media-query($breakpoint_tablet, null) {
+			.center {
+				height: 720px;
+			}
+			.top, .bottom {
+				height: 360px;
+			}
+		}
+	}
+}
+
+//  ICON WELLS
 
 .well {
 	background-color: $brand-light-background-color;
@@ -58,79 +164,21 @@
 	}
 }
 
-//  JUMBOTRON
-
-.container-fluid .jumbotron {
-	background-color: $brand-dark-background-color;
-	border-radius: 0;
-	overflow: hidden;
-	padding: 0;
-
-	.h1 {
-		font-size: 40px;
-	}
-
-	[class*="col-"] {
-		background-repeat: no-repeat;
-		background-size: cover;
-		overflow: hidden;
-		position: relative;
-
-		.wrap {
-			height: 100%;
-			overflow: hidden;
-			@include background-image(linear-gradient(transparent 0, $brand-dark-background-color 100%));
-
-		}
-	}
-
-	&, a {
-		color: $brand-light-text-color;
-	}
-
-	&.two-blocks-jumbotron {
-
-		.col-md-6 {
-
-			> div {
-			}
-		}
-	}
-
-	&.three-blocks-jumbotron {
-
-		.col-md-6 {
-			/*display: table-cell;
-			float: none;
-
-			> div {
-				height: 100%
-			}*/
-		}
-		.center-left {
-			// TABLET
-			@include media-query(sm, $screen-sm-max) {
-				outline: 1px solid red;
-				display: table-cell;
-				float: none;
-
-				> div {
-					height: 100%
-				}
-			}
-			// only screen and (min-width: 768px) DESKTOP, TABLET
-			@include sm {
-
-			}
-
-		}
-	}
+// ADS
+.theme-ad {
+	color: $brand-medium-text-color;
+/*	font-size: 12px;*/
 }
+
 
 // FIGURES
 
 .figure {
 	margin-bottom: 0;
+
+	& > img {
+		width: 100%;
+	}
 
 	&, a {
 		color: $brand-light-text-color;
@@ -286,9 +334,19 @@
 // NEWS TICKER
 
 #news-ticker {
+
 	.text-uppercase {
 		color: $brand-light-text-color;
 	}
 
+	p {
+		color: rgba($brand-light-text-color, 0.5);
+	}
+
+	#ticker-counter {
+		background-color: $brand-link-color;
+		width: 64px;
+		height: 64px;
+	}
 }
 

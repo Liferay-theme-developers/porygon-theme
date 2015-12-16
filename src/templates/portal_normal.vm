@@ -53,40 +53,48 @@ $theme.include($body_top_include)
 			#breadcrumbs()
 		</nav>-->
 
-<!-- * *************************************************** -->
+<!-- * THREE BIG IMAGE BLOCKS *************************************************** -->
 
 	<div class="col-no-padding jumbotron three-blocks-jumbotron">
-		<div class="center-left col-md-6" style="background-image: url($images_folder/content/background-01.jpg)">
-			<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
-			<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
+		<div class="col-md-6">
+			<div class="center left" style="background-image: url(http://lorempixel.com/720/720)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
+					<p class="small text-uppercase">By <a href="#">Adi Robertson</a></p>
+				</div>
+			</div>
 		</div>
 		<div class="col-md-6">
-			<div class="top-right" style="background-image: url($images_folder/content/background-02.jpg)">
-				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
-					<p class="text-uppercase">By <a href="#">Adi Robertson</a></p>
+			<div class="top right" style="background-image: url(http://lorempixel.com/g/720/360)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+					<p class="small text-uppercase">By <a href="#">Adi Robertson</a></p>
+				</div>
 			</div>
-			<div class="bottom-right" style="background-image: url($images_folder/content/background-03.jpg)">
-				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
-					<p class="text-uppercase">By <a href="#">Russell Brando</a></p>
+			<div class="bottom right" style="background-image: url(http://lorempixel.com/720/360)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">Facebook, Twitter, and Google crack down on hate speech in Germany</a></h2>
+					<p class="small text-uppercase">By <a href="#">Jonathan Cumberbatch</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
+<!-- * HORIZONTAL AD *************************************************** -->
+
 	<div class="container-fluid-1280">
-		<div class="well">
+		<div class="text-center theme-ad well">
 			<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/banner_970x90.png"></a>
 			<p class="small">Advertisement</p>
 		</div>
 	</div>
 
-	<!-- VIDEO CAROUSEL
+<!-- * VERTICAL IMAGE GALLERY ***************************************************
 		http://bootsnipp.com/snippets/featured/news-carousel
 	-->
 	<div class="container-fluid-1280">
 		<div class="carousel col-no-padding slide vertical-carousel" data-ride="carousel" id="mainCarousel">
-
 			<div class="carousel-inner">
-
 				<div class="active item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
 					<div class="carousel-caption">
@@ -111,9 +119,7 @@ $theme.include($body_top_include)
 						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
 					</div>
 				</div>
-
 			</div><!-- End Carousel Inner -->
-
 			<ul class="col-sm-4 list-group">
 				<li class="active list-group-item" data-slide-to="0" data-target="#mainCarousel">
 					<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/68/68">
@@ -181,28 +187,39 @@ $theme.include($body_top_include)
 
 	<section class="container-fluid-1280">
 
+<!-- * BASIC TEXT MODULES *************************************************** -->
+
 		<div class="col-md-8">
 			<div class="col-md-6">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+					<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				</div>
 			</div>
 			<div class="col-md-6">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+					<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				</div>
 			</div>
 			<div class="clearfix visible-lg-block visible-md-block"></div>
 			<div class="col-md-6">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
-				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+					<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				</div>
 			</div>
 			<div class="col-md-6">
-				<div class="well">
+
+<!-- * GRAY BLOCK WITH ICON BLOCKS *************************************************** -->
+
+				<div class="theme-gray-module well">
 					<span class="user-icon user-icon-xl"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
 					<h2 class="text-center text-uppercase">Trending discussions</h2>
 
@@ -221,50 +238,61 @@ $theme.include($body_top_include)
 			</div>
 		</div>
 		<div class="col-md-4">
-			<div class="well">
+			<div class="text-center theme-ad well">
 				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" /></a>
 				<p class="small">Advertisement</p>
 			</div>
-
-			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-			<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
-			<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
-			<p>The Mailbox team can’t say it wasn’t warned. Back when co-founder Gentry Underwood was raising money to build the app that would become Mailbox, investors tried to urge him away.</p>
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
+				<p>The Mailbox team can’t say it wasn’t warned. Back when co-founder Gentry Underwood was raising money to build the app that would become Mailbox, investors tried to urge him away.</p>
+			</div>
 		</div>
 	</section>
 
+<!-- * TWO BIG IMAGE BLOCKS *************************************************** -->
+
 	<div class="col-no-padding jumbotron two-blocks-jumbotron">
-		<div class="col-md-6" style="background-image: url(http://lorempixel.com/937/360)">
-			<div class="wrap">
-				<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
-				<p class="small text-uppercase">By <a href="">David Frederick Attenborough</a></p>
+		<div class="col-md-6">
+			<div class="center left" style="background-image: url(http://lorempixel.com/720/360)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+					<p class="small text-uppercase">By <a href="#">David Frederick Attenborough</a></p>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-6" style="background-image: url(http://lorempixel.com/g/937/360)">
-			<div class="wrap">
-				<h2 class="h1"><a href="#">Evan Spiegel Reveals Plan to Turn Snapchat Into a Real Business</a></h2>
-				<p class="small text-uppercase">By <a href="">Russel Brandom</a></p>
+		<div class="col-md-6">
+			<div class="center right" style="background-image: url(http://lorempixel.com/g/720/360)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">Evan Spiegel Reveals Plan to Turn Snapchat Into a Real Business</a></h2>
+					<p class="small text-uppercase">By <a href="#">Russel Brandom</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- News Ticker-->
-	<div class="brand-background-color" id="news-ticker">
-		<img alt="[Insert alternative description here]" class="" src="$images_folder/content/64x64.jpg" />
-		<span class="text-uppercase">Trending now</span>
-		<div class="text-uppercase" id="ticker-counter"><span class="h1">10</span> new</div>
+<!-- * NEWS TICKER *************************************************** -->
+
+	<div class="brand-background-color clearfix" id="news-ticker">
+		<img alt="[Insert alternative description here]" class="pull-left" src="$images_folder/content/64x64.jpg" />
+		<p class="pull-left"><span class="text-uppercase">Trending now</span> A tiny string of text can disable iPhone Messages</p>
+		<div class="pull-right text-center text-uppercase" id="ticker-counter"><span class="h1">10</span> <span class="small">new</span></div>
 	</div>
-
-
 
 	<section class="container-fluid-1280">
 		<div class="col-md-3">
-			<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
-			<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
-			<p class="text-info text-uppercase"><a href="#">James Vincent</a> MAY 26</p>
-			<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
 		</div>
 		<div class="col-md-3">
+
+<!-- * BACKGROUND SMALL col-md-3 IMAGE BLOCK *************************************************** -->
+
 			<div class="figure">
 				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/282x148_01.jpg">
 				<div class="figcaption-full">
@@ -287,6 +315,9 @@ $theme.include($body_top_include)
 			</div>
 		</div>
 		<div class="col-md-6">
+
+<!-- * BACKGROUND BIG col-md-6 IMAGE BLOCK *************************************************** -->
+
 			<div class="figure">
 				<img alt="[Insert alternative description here]" class="img-responsive" src="$images_folder/content/595x312.jpg">
 				<div class="figcaption-full">
@@ -312,7 +343,9 @@ $theme.include($body_top_include)
 		</div>
 	</section>
 
-		<!-- http://bootsnipp.com/snippets/featured/simple-carousel -->
+<!-- * PHOTO IMAGE GALLERY ***************************************************
+http://bootsnipp.com/snippets/featured/simple-carousel -->
+
 	<div class="brand-background-color">
 		<section class="container-fluid-1280">
 			<div class="row">
@@ -320,6 +353,7 @@ $theme.include($body_top_include)
 					<h2 class="h6 text-center text-uppercase">Photo Essays</h2>
 					<div id="photo-carousel" class="carousel slide">
 						<div class="carousel-inner">
+						<!-- 1 ITEM - 3 IMAGES-->
 							<div class="item active">
 								<div class="col-md-4">
 									<a class="thumbnail" href="#">
@@ -331,7 +365,31 @@ $theme.include($body_top_include)
 								<div class="col-md-4">
 									<a class="thumbnail" href="#">
 										<h3 class="h1">World Cup sponsor logos redesigned to protest</h3>
-										<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/396/396"/>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/396/396/business"/>
+									</a>
+									<p class="small">by Michael Peach.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">BMW shows off its newest concept car: the 3.0 CSL</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/technics/4"/>
+									</a>
+									<p class="small">by Ben Popper.</p>
+								</div>
+							</div>
+						<!-- 1 ITEM - 3 IMAGES-->
+							<div class="item">
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">GoPro made a crazy 16-camera rig for Google Jump</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/fashion"/>
+									</a>
+									<p class="small">by Sean O'Kane.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">World Cup sponsor logos redesigned to protest</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/396/396/food/2"/>
 									</a>
 									<p class="small">by Michael Peach.</p>
 								</div>
@@ -343,21 +401,30 @@ $theme.include($body_top_include)
 									<p class="small">by Ben Popper.</p>
 								</div>
 							</div>
+						<!-- 1 ITEM - 3 IMAGES-->
 							<div class="item">
-
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/business"></a></div>
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/transport"></a></div>
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/city"></a></div>
-
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">GoPro made a crazy 16-camera rig for Google Jump</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396"/>
+									</a>
+									<p class="small">by Sean O'Kane.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">World Cup sponsor logos redesigned to protest</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/396/396/food/4"/>
+									</a>
+									<p class="small">by Michael Peach.</p>
+								</div>
+								<div class="col-md-4">
+									<a class="thumbnail" href="#">
+										<h3 class="h1">BMW shows off its newest concept car: the 3.0 CSL</h3>
+										<img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/technics/3"/>
+									</a>
+									<p class="small">by Ben Popper.</p>
+								</div>
 							</div>
-							<div class="item">
-
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/abstract"></a></div>
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/food"></a></div>
-									<div class="col-md-4"><a class="thumbnail" href="#"><img alt="[Insert alternative description here]" src="http://lorempixel.com/396/396/technics"></a></div>
-
-							</div>
-
 						</div>
 
 							<a data-slide="prev" href="#photo-carousel" class="carousel-control left">‹</a>
@@ -374,6 +441,9 @@ $theme.include($body_top_include)
 			</script>
 		</section>
 	</div>
+
+<!-- * WIDE BUTTON - SEE ALL NEWS *************************************************** -->
+
 	<div class="container-fluid-1280">
 		<a class="btn btn-block btn-lg btn-primary btn-theme-primary">See all news</a>
 	</div>
