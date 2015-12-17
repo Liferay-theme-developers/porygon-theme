@@ -20,6 +20,17 @@ body {
 	color: $brand-dark-text-color;
 }
 
+.figure .small.text-uppercase a, .theme-basic-module .text-info.text-uppercase a, .jumbotron .small.text-uppercase a {
+	border-bottom: 1px solid;
+	border-color: inherit;
+	padding-bottom: 0.4em;
+
+	&:hover, &:focus {
+		border-color: transparent;
+		text-decoration: none;
+	}
+}
+
 .brand-background-color {
 	background-color: $brand-dark-background-color;
 
@@ -29,6 +40,7 @@ body {
 }
 
 // BASIC TEXT MODULES
+
 .theme-basic-module {
 	color: $brand-dark-text-color;
 	margin-bottom: 35px;
@@ -103,14 +115,13 @@ body {
 		}
 	}
 
-
 	&.two-blocks-jumbotron {
-
 		.center, .top, .bottom {
 			min-height: 322px;
 		}
 
 		// DESKTOP
+
 		@include media-query($breakpoint_tablet, null) {
 			.center {
 				height: 360px;
@@ -119,20 +130,22 @@ body {
 	}
 
 	&.three-blocks-jumbotron {
-
 		.center, .top, .bottom {
 			min-height: 322px;
 		}
 
 		// TABLET
+
 		@include media-query(sm, $screen-sm-max) {
 		}
 
 		// DESKTOP
+
 		@include media-query($breakpoint_tablet, null) {
 			.center {
 				height: 720px;
 			}
+
 			.top, .bottom {
 				height: 360px;
 			}
@@ -149,6 +162,29 @@ body {
 	box-shadow: none;
 	position: relative;
 
+	.list-group {
+		box-shadow: none;
+		margin-bottom: 0;
+	}
+
+	.list-group-item {
+		background-color: transparent;
+		border-width: 0;
+
+		a {
+			color: $brand-dark-color;
+		}
+	}
+
+	.h4.text-center {
+		border-bottom: 1px solid $brand-medium-text-color;
+		display: inline-block;
+	}
+
+	.small.text-uppercase {
+		opacity: 0.3;
+	}
+
 	.user-icon.user-icon-xl {
 		background-color: $brand-link-color;
 		color: $brand-light-text-color;
@@ -159,17 +195,17 @@ body {
 	}
 
 	.glyphicon  {
-		top: 3px;
 		left: 1px;
+		top: 3px;
 	}
 }
 
 // ADS
+
 .theme-ad {
 	color: $brand-medium-text-color;
 /*	font-size: 12px;*/
 }
-
 
 // FIGURES
 
@@ -280,7 +316,6 @@ body {
 // PHOTO CAROUSEL
 
 #photo-carousel {
-
 	.thumbnail {
 		border-radius: 0;
 		border-width: 0;
@@ -315,15 +350,15 @@ body {
 		background-image: none;
 		border-radius: 50%;
 		bottom: auto;
-		font-size: 40px;
 		font-family: 'fontawesome-alloy';
+		font-size: 40px;
 		height: 68px;
 		line-height: 62px;
 		opacity: 1;
 		text-shadow: none;
-		width: 68px;
-		transform: translate(-50%, -50%);
 		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 68px;
 
 		&.right {
 			transform: translate(50%, -50%);
@@ -334,7 +369,6 @@ body {
 // NEWS TICKER
 
 #news-ticker {
-
 	.text-uppercase {
 		color: $brand-light-text-color;
 	}
@@ -345,8 +379,7 @@ body {
 
 	#ticker-counter {
 		background-color: $brand-link-color;
-		width: 64px;
 		height: 64px;
+		width: 64px;
 	}
 }
-
