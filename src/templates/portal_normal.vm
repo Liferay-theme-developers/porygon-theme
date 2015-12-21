@@ -65,7 +65,7 @@ $theme.include($body_top_include)
 			</div>
 		</div>
 		<div class="col-md-6">
-			<div class="top right" style="background-image: url(http://lorempixel.com/g/720/360)">
+			<div class="right top" style="background-image: url(http://lorempixel.com/g/720/360)">
 				<div class="wrap">
 					<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
 					<p class="small text-uppercase">By <a href="#">Adi Robertson</a></p>
@@ -98,44 +98,48 @@ $theme.include($body_top_include)
 				<div class="active item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">The high-tech baby gadgets of modern parenting</a></h2>
+						<h2 class="h1"><a href="#">The high-tech baby gadgets of modern 1 parenting</a></h2>
 					</div>
 				</div>
 				<div class="item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">The terrifying fun of going 180 mph in an IndyCar</a></h2>
+						<h2 class="h1"><a href="#">The terrifying fun of going 180 mph in 2 an IndyCar</a></h2>
 					</div>
 				</div>
 				<div class="item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/833/640">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
+						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world 3 in 2015</a></h2>
 					</div>
 				</div>
 				<div class="item">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/g/833/640/cats">
 					<div class="carousel-caption">
-						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world in 2015</a></h2>
+						<h2 class="h1"><a href="#">21 inspiring TED Fellows changing the world 4 in 2015</a></h2>
 					</div>
 				</div>
 			</div><!-- End Carousel Inner -->
 			<ul class="col-sm-4 list-group">
 				<li class="active list-group-item" data-slide-to="0" data-target="#mainCarousel">
 					<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/68/68">
-					<p>The high-tech baby gadgets of modern parenting</p>
+					<p>The high-tech baby gadgets of modern 1 parenting</p>
+					<p><a href="http://www.liferay.com">Watch now</a></p>
 				</li>
 				<li class="list-group-item" data-slide-to="1" data-target="#mainCarousel">
 					<img alt="[Insert alternative description here]" src="http://lorempixel.com/68/68/fashion">
-					<p>A Canadian inventor has set a new Guinness World</p>
+					<p>A Canadian inventor has set a new Guinness 2 World</p>
+					<p><a href="http://www.liferay.com">Watch now</a></p>
 				</li>
 				<li class="list-group-item" data-slide-to="2" data-target="#mainCarousel">
 					<img alt="[Insert alternative description here]" src="http://lorempixel.com/g/68/68/city">
-					<p>21 inspiring TED Fellows changing the world in 2015</p>
+					<p>21 inspiring TED Fellows changing the world 3 in 2015</p>
+					<p><a href="http://www.liferay.com">Watch now</a></p>
 				</li>
 				<li class="list-group-item" data-slide-to="3" data-target="#mainCarousel">
 					<img  alt="[Insert alternative description here]" src="http://lorempixel.com/68/68/city">
-					<p>21 inspiring TED Fellows changing the world in 2015</p>
+					<p>21 inspiring TED Fellows changing the world 4 in 2015</p>
+					<p><a href="http://www.liferay.com">Watch now</a></p>
 				</li>
 			</ul>
 
@@ -221,7 +225,9 @@ $theme.include($body_top_include)
 
 				<div class="theme-gray-module well">
 					<span class="user-icon user-icon-xl"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-					<h2 class="h4 text-center text-uppercase">Trending discussions</h2>
+					<!-- CASO DE ICONO DE FUEGO
+					<span class="user-icon user-icon-xl"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></span>-->
+					<h2 class="h4 text-center"><span class="text-uppercase">Trending discussions</span></h2>
 					<div class="list-group">
 						<div class="list-group-item">
 							<p class="small text-uppercase">May 27, 2015</p>
@@ -279,10 +285,14 @@ $theme.include($body_top_include)
 
 <!-- * NEWS TICKER *************************************************** -->
 
-	<div class="brand-background-color clearfix" id="news-ticker">
-		<img alt="[Insert alternative description here]" class="pull-left" src="http://lorempixel.com/64/64" />
-		<p class="pull-left"><span class="text-uppercase">Trending now</span> A tiny string of text can disable iPhone Messages</p>
-		<div class="pull-right text-center text-uppercase" id="ticker-counter"><span class="h1">10</span> <span class="small">new</span></div>
+	<div class="brand-background-color news-ticker">
+		<div class="image-wrap">
+			<img alt="[Insert alternative description here]" src="http://lorempixel.com/64/64" />
+		</div>
+		<div class="text-wrap">
+			<p><span class="text-uppercase">Trending now</span> A tiny string of text can disable iPhone Messages</p>
+		</div>
+		<div class="pull-right text-center text-uppercase ticker-counter"><span class="h1">10</span> <span class="small">new</span></div>
 	</div>
 
 	<section class="container-fluid-1280">
@@ -351,15 +361,15 @@ $theme.include($body_top_include)
 <!-- * PHOTO IMAGE GALLERY ***************************************************
 http://bootsnipp.com/snippets/featured/simple-carousel -->
 
-	<div class="brand-background-color">
+	<div class="brand-background-color photo-carousel-container">
 		<section class="container-fluid-1280">
 			<div class="row">
 				<div class="col-md-12">
 					<h2 class="h6 text-center text-uppercase">Photo Essays</h2>
-					<div id="photo-carousel" class="carousel slide">
+					<div class="carousel slide" id="photo-carousel">
 						<div class="carousel-inner">
 						<!-- 1 ITEM - 3 IMAGES-->
-							<div class="item active">
+							<div class="active item">
 								<div class="col-md-4">
 									<a class="thumbnail" href="#">
 										<h3 class="h1">GoPro made a crazy 16-camera rig for Google Jump</h3>
@@ -432,8 +442,8 @@ http://bootsnipp.com/snippets/featured/simple-carousel -->
 							</div>
 						</div>
 
-							<a data-slide="prev" href="#photo-carousel" class="carousel-control left">‹</a>
-							<a data-slide="next" href="#photo-carousel" class="carousel-control right">›</a>
+							<a class="carousel-control left" data-slide="prev" href="#photo-carousel">‹</a>
+							<a class="carousel-control right" data-slide="next" href="#photo-carousel">›</a>
 					</div>
 				</div>
 			</div>

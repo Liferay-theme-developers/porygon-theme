@@ -20,6 +20,10 @@ body {
 	color: $brand-dark-text-color;
 }
 
+.container-fluid {
+	padding: 0;
+}
+
 .figure .small.text-uppercase a, .theme-basic-module .text-info.text-uppercase a, .jumbotron .small.text-uppercase a {
 	border-bottom: 1px solid;
 	border-color: inherit;
@@ -116,6 +120,8 @@ body {
 	}
 
 	&.two-blocks-jumbotron {
+		margin-bottom: 0;
+
 		.center, .top, .bottom {
 			min-height: 322px;
 		}
@@ -130,13 +136,10 @@ body {
 	}
 
 	&.three-blocks-jumbotron {
+		margin-bottom: 0;
+
 		.center, .top, .bottom {
 			min-height: 322px;
-		}
-
-		// TABLET
-
-		@include media-query(sm, $screen-sm-max) {
 		}
 
 		// DESKTOP
@@ -174,11 +177,19 @@ body {
 		a {
 			color: $brand-dark-color;
 		}
+
+		h3 {
+			margin-top: 0;
+		}
 	}
 
 	.h4.text-center {
-		border-bottom: 1px solid $brand-medium-text-color;
-		display: inline-block;
+		margin: 40px auto;
+
+		.text-uppercase {
+			border-bottom: 1px solid #DCDCDC;
+			padding-bottom: 8px;
+		}
 	}
 
 	.small.text-uppercase {
@@ -204,7 +215,10 @@ body {
 
 .theme-ad {
 	color: $brand-medium-text-color;
-/*	font-size: 12px;*/
+
+	p {
+		margin-top: 10px;
+	}
 }
 
 // FIGURES
@@ -292,7 +306,13 @@ body {
 		}
 
 		&.active, &.active:hover, &.active:focus {
+			background-color: $brand-light-background-color;
 			border-color: $brand-link-color;
+			color: $brand-link-color;
+
+			a {
+				color: $brand-link-color;
+			}
 		}
 	}
 
@@ -315,13 +335,24 @@ body {
 
 // PHOTO CAROUSEL
 
+.photo-carousel-container {
+	h2 {
+		margin: 40px auto;
+	}
+}
+
 #photo-carousel {
 	.thumbnail {
+		background-color: $brand-dark-background-color;
 		border-radius: 0;
 		border-width: 0;
 		margin-bottom: 15px;
 		padding: 0;
 		position: relative;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
 
 		h3 {
 			bottom: 0;
@@ -357,29 +388,67 @@ body {
 		opacity: 1;
 		text-shadow: none;
 		top: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(0, -50%);
 		width: 68px;
 
 		&.right {
-			transform: translate(50%, -50%);
+			transform: translate(0, -50%);
+		}
+
+		// DESKTOP
+
+		@include media-query($breakpoint_tablet, null) {
+			transform: translate(-100%, -50%);
+
+			&.right {
+				transform: translate(100%, -50%);
+			}
 		}
 	}
 }
 
 // NEWS TICKER
 
-#news-ticker {
-	.text-uppercase {
+.news-ticker {
+	color: $brand-light-text-color;
+	display: table;
+	margin-bottom: 60px;
+	width: 100%;
+
+	.image-wrap, .text-wrap, .ticker-counter {
+		display: table-cell;
+		float: none;
+		vertical-align: middle;
+	}
+
+	.image-wrap {
+		height: 64px;
+		width: 64px;
+	}
+
+	span.text-uppercase {
 		color: $brand-light-text-color;
+		padding-right: 25px;
 	}
 
 	p {
 		color: rgba($brand-light-text-color, 0.5);
+		display: inline-block;
+		margin: 0 0 0 25px;
 	}
 
-	#ticker-counter {
+	.ticker-counter {
 		background-color: $brand-link-color;
 		height: 64px;
+		padding-top: 5px;
 		width: 64px;
+
+		span {
+			display: block;
+		}
+
+		.h1 {
+			margin: 0;
+		}
 	}
 }

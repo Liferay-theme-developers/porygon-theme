@@ -1,12 +1,60 @@
 #banner {
 	background-color: $brand-dark-background-color;
 
-	a {
-		color: rgba($brand-light-text-color, 0.8);
-	}
-
 	.navbar-nav {
 		font-size: 12px;
 		text-transform: uppercase;
+	}
+}
+
+.navbar-site a, .user-personal-bar a {
+	color: rgba($brand-light-text-color, 0.8);
+}
+
+#heading {
+	float: left;
+
+	.site-name {
+		color: $brand-light-text-color;
+	}
+}
+
+#navigation .navbar {
+	float: left;
+	margin-bottom: 0;
+}
+
+#navigation .portlet-name-text {
+		border-width: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+}
+
+.navbar-form.navbar-right {
+	.lfr-ddm-field-group {
+		margin-bottom: 0;
+	}
+
+	.search-button.btn-default {
+		background-color: transparent;
+		border-width: 0;
+		font-size: 32px;
+		opacity: 0.4;
+	}
+
+	.lfr-btn-label {
+		border-width: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
 	}
 }

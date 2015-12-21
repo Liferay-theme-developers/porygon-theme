@@ -1,3 +1,12 @@
 .form-control {
 	border-color: $brand-light-background-color;
+
+	&:focus, &:active {
+		border-color: $brand-link-color;
+		color: $brand-light-text-color;
+	}
+
+	::-webkit-input-placeholder , :-moz-placeholder , ::-moz-placeholder , :-ms-input-placeholder {
+		color: $brand-light-text-color;
+	}
 }
