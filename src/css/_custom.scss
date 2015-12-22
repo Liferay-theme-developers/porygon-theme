@@ -49,6 +49,10 @@ body {
 	color: $brand-dark-text-color;
 	margin-bottom: 35px;
 
+	&:last-of-type {
+		margin-bottom: 35px;
+	}
+
 	img {
 		width: 100%;
 	}
@@ -136,7 +140,7 @@ body {
 	}
 
 	&.three-blocks-jumbotron {
-		margin-bottom: 0;
+		margin-bottom: 35px;
 
 		.center, .top, .bottom {
 			min-height: 322px;
@@ -211,6 +215,14 @@ body {
 	}
 }
 
+// TEXT LINKS
+
+.text-links {
+	a {
+		color: $brand-link-color;
+	}
+}
+
 // ADS
 
 .theme-ad {
@@ -225,6 +237,10 @@ body {
 
 .figure {
 	margin-bottom: 0;
+
+	&:last-of-type {
+		margin-bottom: 35px;
+	}
 
 	& > img {
 		width: 100%;
@@ -336,8 +352,11 @@ body {
 // PHOTO CAROUSEL
 
 .photo-carousel-container {
+	margin-bottom: 35px;
+	padding: 35px 0;
+
 	h2 {
-		margin: 40px auto;
+		margin: 0 auto 35px;
 	}
 }
 
@@ -415,6 +434,10 @@ body {
 	margin-bottom: 60px;
 	width: 100%;
 
+	a {
+		color: rgba($brand-light-text-color, 0.5);
+	}
+
 	.image-wrap, .text-wrap, .ticker-counter {
 		display: table-cell;
 		float: none;
@@ -439,6 +462,7 @@ body {
 
 	.ticker-counter {
 		background-color: $brand-link-color;
+		display: block;
 		height: 64px;
 		padding-top: 5px;
 		width: 64px;
@@ -449,6 +473,10 @@ body {
 
 		.h1 {
 			margin: 0;
+
+			a {
+				color: $brand-light-text-color;
+			}
 		}
 	}
 }

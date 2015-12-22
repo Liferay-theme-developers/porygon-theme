@@ -89,6 +89,17 @@ $theme.include($body_top_include)
 		</div>
 	</div>
 
+<!-- * TEXT LINKS *************************************************** -->
+
+	<div class="col-no-padding container-fluid-1280 text-links">
+		<div class="col-md-8 text-uppercase">
+			<p>Parenting made easy? <a href="#">Watch now</a></p>
+		</div>
+		<div class="col-md-4 text-right text-uppercase">
+			<p><a href="#">See more videos</a></p>
+		</div>
+	</div>
+
 <!-- * VERTICAL IMAGE GALLERY ***************************************************
 		http://bootsnipp.com/snippets/featured/news-carousel
 	-->
@@ -290,73 +301,73 @@ $theme.include($body_top_include)
 			<img alt="[Insert alternative description here]" src="http://lorempixel.com/64/64" />
 		</div>
 		<div class="text-wrap">
-			<p><span class="text-uppercase">Trending now</span> A tiny string of text can disable iPhone Messages</p>
+			<p><span class="text-uppercase">Trending now</span> <a href="#">A tiny string of text can disable iPhone Messages</a></p>
 		</div>
-		<div class="pull-right text-center text-uppercase ticker-counter"><span class="h1">10</span> <span class="small">new</span></div>
+		<a class="pull-right text-center text-uppercase ticker-counter" href="#"><span class="h1">10</span> <span class="small">new</span></a>
 	</div>
 
+
 	<section class="container-fluid-1280">
-		<div class="col-md-3">
+		<div class="col-md-4">
 			<div class="theme-basic-module">
-				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/720/360" />
-				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/food" />
+				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
 				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
-				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+			</div>
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/fashion" />
+				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
 			</div>
 		</div>
-		<div class="col-md-3">
-
-<!-- * BACKGROUND SMALL col-md-3 IMAGE BLOCK *************************************************** -->
-
-			<div class="figure">
-				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148">
-				<div class="figcaption-full">
-					<div class="flex-container">
-						<div class="flex-item-bottom">
-							<h2><a href="#">World Cup sponsor logos redesigned to protest.</a></h2>
-						</div>
-					</div>
-				</div>
+		<div class="col-md-4">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/fashion" />
+				<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
 			</div>
-			<div class="figure">
-				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148/business">
-				<div class="figcaption-full">
-					<div class="flex-container">
-						<div class="flex-item-bottom">
-							<h2><a href="#">Carajillo strong, grounds redeye half and half so percolator.</a></h2>
-						</div>
-					</div>
-				</div>
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/food" />
+				<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
 			</div>
 		</div>
-		<div class="col-md-6">
 
-<!-- * BACKGROUND BIG col-md-6 IMAGE BLOCK *************************************************** -->
-
-			<div class="figure">
-				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/595/312/business">
-				<div class="figcaption-full">
-					<div class="flex-container">
-						<div class="flex-item-bottom">
-							<h2><a href="#">The debate on lethal robots is starting too late</a></h2>
-							<p class="small text-uppercase">By <a href="">David Frederick Attenborough</a></p>
-						</div>
+		<div class="col-md-4">
+			<div class="theme-gray-module well">
+				<span class="user-icon user-icon-xl"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></span>
+				<h2 class="h4 text-center"><span class="text-uppercase">Trending discussions</span></h2>
+				<div class="list-group">
+					<div class="list-group-item">
+						<p class="small text-uppercase">May 27, 2015</p>
+						<h3><a href="#">Millennials to Snake People is a Cloud to Butt whose time has come</a></h3>
+						<p class="small text-uppercase">By James Vincent</p>
+					</div>
+					<div class="list-group-item">
+						<p class="small text-uppercase">May 27, 2015</p>
+						<h3><a href="#">Confused by the FIFA corruption news? John Oliver explained it last</a></h3>
+						<p class="small text-uppercase">By Marcos Castro</p>
+					</div>
+					<div class="list-group-item">
+						<p class="small text-uppercase">May 27, 2015</p>
+						<h3><a href="#">Considering Windows 10 this holiday? Here's what you need to know</a></h3>
+						<p class="small text-uppercase">By Iván Morote</p>
 					</div>
 				</div>
 			</div>
-			<div class="figure">
-				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/595/312/cats">
-				<div class="figcaption-full">
-					<div class="flex-container">
-						<div class="flex-item-bottom">
-							<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
-							<p class="small text-uppercase">By <a href="">Brad Sayers</a></p>
-						</div>
-					</div>
-				</div>
+
+			<div class="text-center theme-ad well">
+				<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" /></a>
+				<p class="small">Advertisement</p>
 			</div>
+
 		</div>
 	</section>
+
 
 <!-- * PHOTO IMAGE GALLERY ***************************************************
 http://bootsnipp.com/snippets/featured/simple-carousel -->
@@ -456,6 +467,190 @@ http://bootsnipp.com/snippets/featured/simple-carousel -->
 			</script>
 		</section>
 	</div>
+
+	<section class="container-fluid-1280">
+
+			<div class="col-md-4">
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/food" />
+					<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				</div>
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/sports" />
+					<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/371/200/transport" />
+					<h2><a href="#">Man breaks Guinness hoverboard record after standing on a drone</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>A Canadian inventor has set a new Guinness World Record for the farthest hoverboard flight, thanks to a homemade contraption that looks nothing like Marty McFly's ride of choice. The engineer, Catalin.</p>
+				</div>
+				<div class="theme-basic-module">
+					<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/g/371/200/business" />
+					<h2><a href="#">Sure, let's put 'meme' in the dictionary, but call us when they add dank memes</a></h2>
+					<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+					<p>Merriam-Webster has had, in its own words, a bit of a growth spurt, adding a clutch of new words to its unabridged dictionary. These include some genuinely great entries ("colossal squid" is the perfect.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="text-center theme-ad well">
+					<a href="#"><img alt="[Insert alternative description here]" class="center-block img-responsive" src="$images_folder/content/370x200.png" /></a>
+					<p class="small">Advertisement</p>
+				</div>
+			</div>
+
+	</section>
+
+	<div class="col-no-padding jumbotron three-blocks-jumbotron">
+		<div class="col-md-6">
+			<div class="center left" style="background-image: url(http://lorempixel.com/720/720/technics)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">Jony Ive taking new, more hands-off 'chief design officer' role at Apple</a></h2>
+					<p class="small text-uppercase">By <a href="#">Adi Robertson</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="right top" style="background-image: url(http://lorempixel.com/720/360/fashion)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">This inflatable plane could explore the clouds of Venus</a></h2>
+					<p class="small text-uppercase">By <a href="#">Adi Robertson</a></p>
+				</div>
+			</div>
+			<div class="bottom right" style="background-image: url(http://lorempixel.com/720/360/nature)">
+				<div class="wrap">
+					<h2 class="h1"><a href="#">Facebook, Twitter, and Google crack down on hate speech in Germany</a></h2>
+					<p class="small text-uppercase">By <a href="#">Jonathan Cumberbatch</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="container-fluid-1280">
+		<div class="col-md-3">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/720/360" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+
+<!-- * BACKGROUND SMALL col-md-3 IMAGE BLOCK *************************************************** -->
+
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">World Cup sponsor logos redesigned to protest.</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148/business">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">Carajillo strong, grounds redeye half and half so percolator.</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148/nature">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">Carajillo strong, grounds redeye half and half so percolator.</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/282/148/food">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">Carajillo strong, grounds redeye half and half so percolator.</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/720/360/nightlife" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/g/720/360/" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid-1280">
+		<div class="col-md-3">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/720/360/abstract" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="theme-basic-module">
+				<img alt="[Insert alternative description here]" class="center-block img-responsive" src="http://lorempixel.com/720/360/technics" />
+				<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+				<p class="text-info text-uppercase"><a href="#">James Vincent</a> May 26</p>
+				<p>It's a rite of passage for so many tech companies: building their first wildly ambitious, kind of ridiculous, and generally stunning headquarters to accommodate a ballooning headcount as growth explodes....</p>
+			</div>
+		</div>
+		<div class="col-md-6">
+
+<!-- * BACKGROUND BIG col-md-6 IMAGE BLOCK *************************************************** -->
+
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/595/312/business">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">The debate on lethal robots is starting too late</a></h2>
+							<p class="small text-uppercase">By <a href="">David Frederick Attenborough</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="figure">
+				<img alt="[Insert alternative description here]" class="img-responsive" src="http://lorempixel.com/595/312/cats">
+				<div class="figcaption-full">
+					<div class="flex-container">
+						<div class="flex-item-bottom">
+							<h2><a href="#">Uber reveals plans for a giant glass headquarters in San Francisco</a></h2>
+							<p class="small text-uppercase">By <a href="">Brad Sayers</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 <!-- * WIDE BUTTON - SEE ALL NEWS *************************************************** -->
 
